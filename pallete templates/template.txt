@@ -1,0 +1,20 @@
+@import 'style.css';
+
+
+.navDesktop {
+    background-color: white;
+}
+
+.main {
+    background-color: rgb(0, 0, 0);
+}
+
+a {
+    color: black;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+input {
+    caret-color: rgb(0, 0, 0);
+}

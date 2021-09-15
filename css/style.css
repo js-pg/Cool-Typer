@@ -45,7 +45,7 @@ a {
     padding-left: 24px;
     transition: ease;
     transition-duration: .3s;
-    text-decoration-color: black ;
+    text-decoration: none;
 }
 
 ul, p {
@@ -59,13 +59,11 @@ ul, p {
 
 a:hover {
     text-decoration: underline;
-    text-decoration-color: black ;
 
 }
 
 p:hover {
     text-decoration: underline;
-    text-decoration-color: black;
 }
 
 .mainLi {
