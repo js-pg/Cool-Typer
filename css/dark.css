@@ -1,1 +1,16 @@
 @import 'style.css';
+
+
+.navDesktop {
+    background-color: black;
+}
+
+.main {
+    background-color: rgb(218, 218, 218);
+}
+
+a {
+    color: white;
+    text-decoration-color: rgb(218, 218, 218);
+    text-decoration: none;
+}
