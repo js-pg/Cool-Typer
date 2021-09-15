@@ -6,7 +6,7 @@ const mainDiv = document.getElementById("main");
 mainDiv.style.height = (window.innerHeight)+"px";
 
 function swapStyleSheet(sheet) {
-    document.getElementById('pageStyle').setAttribute('href', sheet)
+    document.getElementById('pageStyle').setAttribute('href', ('css/' + sheet +'.css')) // <<<<<  change link href
 };
 
 function scrollMain() {
