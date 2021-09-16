@@ -9,5 +9,5 @@ window.onkeydown = function(e) {
 window.onkeypress = function(event) {
     console.log(String.fromCharCode(event.keyCode))
     document.getElementById('about').style.display = "none";
-
+    scrollMain()
 }

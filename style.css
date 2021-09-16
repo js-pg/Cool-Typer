@@ -1,6 +1,8 @@
 *{
     margin: 0;
     text-align: center;
+    scrollbar-color: grey transparent;
+    scrollbar-width: thin;
 }
 
 .navDesktop {
@@ -76,4 +78,15 @@ p:hover {
 .mainInput {
     height: 500px;
     width: 300px;
+}
+
+h1 {
+    font-family: 'Lexend Deca'; 
+    font-size: larger;
+    font-weight: 900;
+    font-size: 70px;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }

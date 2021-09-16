@@ -5,7 +5,17 @@
 const mainDiv = document.getElementById("main");
 mainDiv.style.height = (window.innerHeight - 86)+"px";
 
+var i = 0;
+var txt = 'Cool Typer';
+var speed = 220;
 
+function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById('abouth1').innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+}
 
 function scrollMain() {
     window.scroll({
@@ -23,4 +33,5 @@ function scrollAbout() {
         top: window.innerHeight + 100,
         behavior: 'smooth'
     });
+    typeWriter();
 };

@@ -18,9 +18,9 @@
             <div class="menu">
                 <div class="table">
                     <ul>
-                        <li><a href="#" target="_blank" class="mainLi" title="Home" id="mainLi">Cool Typer 😎</a></li>
-                        <li><a href="javascript:void(0);" onclick="scrollMain()" class="navLi" id="li1">Type</a></li>
-                        <li><a href="javascript:void(0);" onclick="scrollAbout()" class="navLi" id="li2">About</a></li>
+                        <li><a href="#" class="mainLi" title="Home" id="mainLi">Cool Typer 😎</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollMain()" class="navLi" id="li1" title="Type">Type</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollAbout()" class="navLi" id="li2" title="About">About</a></li>
                         <li><a href="#" target="_blank" class="navLi" id="li3">Functional Version</a></li>
                     </ul>
                 </div>
@@ -33,7 +33,9 @@
 
         
     </div>
-    <div style="height: 1000px; background-color: rebeccapurple; display: none;" id="about"></div>
+    <div class="typewriter" style="height: 1000px; background-color: rgb(255, 255, 255); display: none; text-align: center;" id="about" >
+        <h1 id="abouth1" ></h1>
+    </div>
     <footer></footer>
     <script src="js/minor.js"></script>
     <script src="js/typing.js"></script>
