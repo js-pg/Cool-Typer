@@ -1,6 +1,6 @@
 *{
     margin: 0;
-
+    text-align: center;
 }
 
 .container {
@@ -74,4 +74,11 @@ p:hover {
 
 .main {
     width: 100%;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.mainInput {
+    height: 500px;
+    width: 300px;
 }
