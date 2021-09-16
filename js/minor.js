@@ -9,6 +9,8 @@ function swapStyleSheet(sheet) {
     document.getElementById('pageStyle').setAttribute('href', ('css/' + sheet +'.css')) // <<<<<  change link href
 };
 
+swapStyleSheet('default')
+
 function scrollMain() {
     window.scroll({
         top: 94,
