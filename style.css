@@ -127,7 +127,7 @@ h1 {
     transform: translateY(+5px);
 }
 
-.gridContainer div:hover + div {
+.gridContainer div:hover ~ div {
     filter: blur(3px);
 }
 
