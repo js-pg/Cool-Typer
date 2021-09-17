@@ -127,6 +127,8 @@ h1 {
 .gridContainer div {
     background-color: rebeccapurple;
     transition: .25s ease-in-out;
+    outline-width: .02em;
+    outline-color: rgb(62, 61, 66);
 }
 
 .gridContainer div:hover {
