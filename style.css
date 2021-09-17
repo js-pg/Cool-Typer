@@ -81,12 +81,11 @@ p:hover {
 }
 
 h1 {
-    font-family: 'Lexend Deca'; 
+    font-family: 'Lexend Deca', sans-serif; 
     font-size: larger;
     font-weight: 900;
     font-size: 70px;
     width: fit-content;
-
     text-align: left;
     padding-top: 50px;
     float: left;
