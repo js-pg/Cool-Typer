@@ -6,8 +6,8 @@ const mainDiv = document.getElementById("main");
 mainDiv.style.height = (window.innerHeight - 86)+"px";
 
 var i = 0;
-var txt = 'Cool Typer';
-var speed = 220;
+var txt = 'Cool Typer - About';
+var speed = 130;
 
 function typeWriter() {
     if (i < txt.length) {
@@ -34,4 +34,5 @@ function scrollAbout() {
         behavior: 'smooth'
     });
     typeWriter();
+ 
 };

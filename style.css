@@ -85,8 +85,26 @@ h1 {
     font-size: larger;
     font-weight: 900;
     font-size: 70px;
-    max-width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+    width: fit-content;
+
     text-align: left;
+    padding-top: 50px;
+    float: left;
+    padding-left: 60%;
 }
+@keyframes caret {
+    0% {opacity: 100%;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+.caret {
+    height: 80px;
+    width: 5px;
+    background-color: black;
+    float: left;
+    margin-left: 10px;
+    transform: translateY(60px);
+    animation: caret 1s infinite;
+}
+
