@@ -128,7 +128,7 @@ h1 {
 }
 
 .gridContainer div:hover + div {
-    filter: blur(5px);
+    filter: blur(3px);
 }
 
 .gridEl1 {
