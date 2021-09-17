@@ -36,3 +36,8 @@ function scrollAbout() {
     typeWriter();
  
 };
+
+window.scroll({
+    top: 0,
+    behavior: 'smooth' //scroll to top on refesh
+});
