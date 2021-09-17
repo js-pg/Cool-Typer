@@ -115,11 +115,12 @@ h1 {
     grid-auto-rows: minmax(100px, auto);
     height: 800px;
     width: 100%;
+    padding-top: 15px;
 }
 
 .gridContainer div {
     background-color: rebeccapurple;
-    transition: .5s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
 .gridContainer div:hover {
