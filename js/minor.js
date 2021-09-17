@@ -7,7 +7,7 @@ mainDiv.style.height = (window.innerHeight - 86)+"px";
 
 var i = 0;
 var txt = 'Cool Typer - About:';
-var speed = 130;
+var speed = 120;
 
 function typeWriter() {
     if (i < txt.length) {
@@ -36,3 +36,8 @@ function scrollAbout() {
     typeWriter();
  
 };
+
+window.scroll({
+    top: 0,
+    behavior: 'smooth' //scroll to top on refesh
+});
