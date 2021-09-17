@@ -90,7 +90,7 @@ h1 {
     text-align: left;
     padding-top: 50px;
     float: left;
-    padding-left: 20px;
+    padding-left: 2px;
 }
 @keyframes caret {
     0% {opacity: 100%;}
