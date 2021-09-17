@@ -120,7 +120,7 @@ h1 {
     grid-auto-rows: minmax(100px, auto);
     height: 800px;
     width: 100%;
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .gridContainer div {
