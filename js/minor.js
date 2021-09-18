@@ -30,7 +30,7 @@ function scrollAbout() {
     document.getElementById('about').style.display = "block";
 
     window.scroll({
-        top: window.innerHeight + 100,
+        top: window.innerHeight + 80,
         behavior: 'smooth'
     });
     typeWriter();
