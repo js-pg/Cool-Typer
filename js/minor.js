@@ -6,8 +6,11 @@ const mainDiv = document.getElementById("main");
 mainDiv.style.height = (window.innerHeight - 86)+"px";
 
 var i = 0;
+var i2 = 0;
 var txt = 'Cool Typer - About:';
+var aboutTxt = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut'
 var speed = 120;
+var speed2 = 200;
 
 function typeWriter() {
     if (i < txt.length) {
@@ -16,6 +19,9 @@ function typeWriter() {
       setTimeout(typeWriter, speed);
     }
 }
+
+
+
 
 function scrollMain() {
     window.scroll({
@@ -41,3 +47,7 @@ window.scroll({
     top: 0,
     behavior: 'smooth' //scroll to top on refesh
 });
+
+document.getElementById('aboutH4').style.opacity = "0%"
+document.getElementById('aboutH4').style.opacity = "100%"
+

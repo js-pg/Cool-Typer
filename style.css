@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0;
     text-align: center;
     scrollbar-color: grey transparent;
-    scrollbar-width: thin;
+    scrollbar-width: none;
 }
 
+
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 0px;
 }
 
 
@@ -95,6 +96,7 @@ h1 {
     padding-top: 50px;
     float: left;
     padding-left: 2px;
+    animation: blink-caret 1s step-end infinite;
 }
 @keyframes caret {
     0% {opacity: 100%;}
@@ -120,7 +122,7 @@ h1 {
     width: 100%;
     gap: 20px;
     padding-top: 25px;
-    transform: skewY(7deg);
+    transform: skewY(0deg);
 
 }
 
@@ -139,4 +141,26 @@ h1 {
 
 .about {
     height: fit-content;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+    }
+    80%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+
+}
+
+h3 {
+    font-family: 'Source Code Pro';
+    letter-spacing: 2.5px;
+    line-height: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
