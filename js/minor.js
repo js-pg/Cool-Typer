@@ -2,7 +2,7 @@
                 |       make main div height of viewport
                \/
 */
-const mainDiv = document.getElementById("main");
+mainDiv = document.getElementById("main");
 mainDiv.style.height = (window.innerHeight - 86)+"px";
 
 var i = 0;
@@ -48,6 +48,53 @@ window.scroll({
     behavior: 'smooth' //scroll to top on refesh
 });
 
-document.getElementById('aboutH4').style.opacity = "0%"
-document.getElementById('aboutH4').style.opacity = "100%"
+document.getElementById('aboutH4').style.opacity = "0%";
+document.getElementById('aboutH4').style.opacity = "100%";
 
+navDesktop = document.getElementById('navDesktop');
+mainLi = document.getElementById('mainLi');
+li1 = document.getElementById('li1');
+li2 = document.getElementById('li2');
+li3 = document.getElementById('li3');
+mainDiv = document.getElementById('main');
+mainInput = document.getElementById('mainInput');
+gridEl1 = document.getElementById('gridEl1');
+gridEl2 = document.getElementById('gridEl2');
+gridEl3 = document.getElementById('gridEl3');
+
+
+console.log('test')
+
+/*function paletteChange(main, main2, highlight, li, mainLi) {
+    navDesktop.style.backgroundColor = main2;
+    mainInput.style.backgroundColor = main;
+    gridEl1.style.outlineColor = highlight;
+    gridEl2.style.outlineColor = highlight;
+    gridEl3.style.outlineColor = highlight;
+    mainLi.style.color = highlight;
+    li1.style.color = li;
+    li2.style.color = li;
+    li3.style.color = li;
+
+
+};*/
+
+function paletteChange(main, main2, highlight, li, mainLi) {
+    navDesktop = document.getElementById('navDesktop').style.backgroundColor = main2;
+    mainLi = document.getElementById('mainLi').style.color = mainLi;
+    li1 = document.getElementById('li1').style.color = li;
+    li2 = document.getElementById('li2').style.color = li;
+    li3 = document.getElementById('li3').style.color = li;
+    mainDiv = document.getElementById('main').style.backgroundColor = main;
+    mainInput = document.getElementById('mainInput').style.backgroundColor = main2;
+    gridEl1 = document.getElementById('gridEl1').style.outline = highlight;
+    gridEl2 = document.getElementById('gridEl2').style.outline = highlight;
+    gridEl3 = document.getElementById('gridEl3').style.outline = highlight;
+    gridEl1 = document.getElementById('gridEl1').style.backgroundColor = main2;
+    gridEl2 = document.getElementById('gridEl2').style.backgroundColor = main2;
+    gridEl3 = document.getElementById('gridEl3').style.backgroundColor = main2;
+    gridEl1 = document.getElementById('gridEl1').style.color = li;
+    gridEl2 = document.getElementById('gridEl2').style.color = li;
+    gridEl3 = document.getElementById('gridEl3').style.color = li;    
+
+};

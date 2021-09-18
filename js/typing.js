@@ -11,3 +11,4 @@ window.onkeypress = function(event) {
     document.getElementById('about').style.display = "none";
     scrollMain()
 }
+
