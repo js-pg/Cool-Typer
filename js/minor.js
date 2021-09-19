@@ -65,19 +65,6 @@ gridEl3 = document.getElementById('gridEl3');
 
 console.log('test')
 
-/*function paletteChange(main, main2, highlight, li, mainLi) {
-    navDesktop.style.backgroundColor = main2;
-    mainInput.style.backgroundColor = main;
-    gridEl1.style.outlineColor = highlight;
-    gridEl2.style.outlineColor = highlight;
-    gridEl3.style.outlineColor = highlight;
-    mainLi.style.color = highlight;
-    li1.style.color = li;
-    li2.style.color = li;
-    li3.style.color = li;
-
-
-};*/
 
 function paletteChange(main, main2, highlight, li, mainLi) {
     navDesktop = document.getElementById('navDesktop').style.backgroundColor = main2;
@@ -87,14 +74,16 @@ function paletteChange(main, main2, highlight, li, mainLi) {
     li3 = document.getElementById('li3').style.color = li;
     mainDiv = document.getElementById('main').style.backgroundColor = main;
     mainInput = document.getElementById('mainInput').style.backgroundColor = main2;
-    gridEl1 = document.getElementById('gridEl1').style.outline = highlight;
-    gridEl2 = document.getElementById('gridEl2').style.outline = highlight;
-    gridEl3 = document.getElementById('gridEl3').style.outline = highlight;
-    gridEl1 = document.getElementById('gridEl1').style.backgroundColor = main2;
-    gridEl2 = document.getElementById('gridEl2').style.backgroundColor = main2;
-    gridEl3 = document.getElementById('gridEl3').style.backgroundColor = main2;
+    gridEl1 = document.getElementById('gridEl1').style.outline = highlight + ' solid 1px';
+    gridEl2 = document.getElementById('gridEl2').style.outline = highlight + ' solid 1px';
+    gridEl3 = document.getElementById('gridEl3').style.outline = highlight + ' solid 1px';
+    gridEl1 = document.getElementById('gridEl1').style.backgroundColor = main;
+    gridEl2 = document.getElementById('gridEl2').style.backgroundColor = main;
+    gridEl3 = document.getElementById('gridEl3').style.backgroundColor = main;
     gridEl1 = document.getElementById('gridEl1').style.color = li;
     gridEl2 = document.getElementById('gridEl2').style.color = li;
-    gridEl3 = document.getElementById('gridEl3').style.color = li;    
-
+    gridEl3 = document.getElementById('gridEl3').style.color = li;   
+    about = document.getElementById('about').style.backgroundColor =  main2;
+    typewriterH1 = document.getElementById('abouth1').style.color = li;
+    caret = document.getElementById('aboutCaret').style.backgroundColor = li;
 };

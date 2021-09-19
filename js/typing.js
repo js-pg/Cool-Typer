@@ -1,3 +1,4 @@
+import {quotes} from '/quotes.js';
 
 window.onkeydown = function(e) {
     if(e.keyCode == 32 && e.target == document.getElementById('main')) {
@@ -12,3 +13,4 @@ window.onkeypress = function(event) {
     scrollMain()
 }
 
+console.log(quotes)

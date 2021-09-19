@@ -3,6 +3,7 @@
     text-align: center;
     scrollbar-color: grey transparent;
     scrollbar-width: none;
+    transition: .15s ease-in-out;
 }
 
 
