@@ -1,4 +1,11 @@
-import {quotes} from '/quotes.js';
+function getQuote() {
+
+fetch('https://api.quotable.io/random')
+    .then(response => response.json())
+    .then(data => document.getElementById('mainPlaceholder').innerHTML = data.content );
+}
+
+getQuote()
 
 window.onkeydown = function(e) {
     if(e.keyCode == 32 && e.target == document.getElementById('main')) {
@@ -12,5 +19,3 @@ window.onkeypress = function(event) {
     document.getElementById('about').style.display = "none";
     scrollMain()
 }
-
-console.log(quotes)

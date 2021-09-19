@@ -71,21 +71,11 @@ p:hover {
 }
 
 .mainLi {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-right: 5em;
     font-weight: 800;
 }
 
-.main {
-    width: 100%;
-    padding-top: 90px;
-    text-align: center;
-}
-
-.mainInput {
-    height: 500px;
-    width: 300px;
-}
 
 h1 {
     font-family: 'Lexend Deca', sans-serif; 
@@ -193,4 +183,34 @@ h3 {
 
 .pDropdown {
     padding-bottom: 8px;
+}
+
+
+.main {
+    width: 100%;
+    padding-top: 190px;
+    text-align: center;
+}
+
+
+#mainInput {
+    font-family: 'Source Code Pro';
+    font-size: 1.5rem;
+    height: 100%;
+    width: 40%;
+    z-index: 3;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainPlaceholder {
+    font-family: 'Source Code Pro';
+    font-size: 1.5rem;
+    height: 100%;
+    width: 40%;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: gray;
 }
