@@ -2,7 +2,7 @@
     margin: 0;
     text-align: center;
     scrollbar-color: grey transparent;
-    scrollbar-width: none;
+    scrollbar-width: thin ;
     transition: .15s ease-in-out;
 }
 
@@ -190,27 +190,32 @@ h3 {
     width: 100%;
     padding-top: 190px;
     text-align: center;
+
 }
 
 
 #mainInput {
-    font-family: 'Source Code Pro';
-    font-size: 1.5rem;
-    height: 100%;
-    width: 40%;
-    z-index: 3;    
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Source Code Pro', sans-serif;
 }
 
 #mainPlaceholder {
-    font-family: 'Source Code Pro';
+    font-family: 'Source Code Pro', sans-serif;
     font-size: 1.5rem;
-    height: 100%;
+    height: fit-content;
     width: 40%;
     z-index: 2;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
-    color: gray;
+    text-align: justify;
+    user-select: none;
+    word-break: normal;
+
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Source Code Pro';
 }

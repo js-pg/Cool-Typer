@@ -25,7 +25,7 @@ function typeWriter() {
 
 function scrollMain() {
     window.scroll({
-        top: 94,
+        top: 200,
         behavior: 'smooth'
     });
     document.getElementById('about').style.display = "none";
@@ -66,14 +66,14 @@ gridEl3 = document.getElementById('gridEl3');
 console.log('test')
 
 
-function paletteChange(main, main2, highlight, li, mainLi) {
+function paletteChange(main, main2, highlight, li, mainLi, input, placeHolder) {
     navDesktop = document.getElementById('navDesktop').style.backgroundColor = main2;
     mainLi = document.getElementById('mainLi').style.color = mainLi;
     li1 = document.getElementById('li1').style.color = li;
     li2 = document.getElementById('li2').style.color = li;
     li3 = document.getElementById('li3').style.color = li;
     mainDiv = document.getElementById('main').style.backgroundColor = main;
-    mainInput = document.getElementById('mainInput').style.backgroundColor = main2;
+    mainInput = document.getElementById('mainInput').style.backgroundColor = main;
     gridEl1 = document.getElementById('gridEl1').style.outline = highlight + ' solid 1px';
     gridEl2 = document.getElementById('gridEl2').style.outline = highlight + ' solid 1px';
     gridEl3 = document.getElementById('gridEl3').style.outline = highlight + ' solid 1px';
@@ -86,4 +86,8 @@ function paletteChange(main, main2, highlight, li, mainLi) {
     about = document.getElementById('about').style.backgroundColor =  main2;
     typewriterH1 = document.getElementById('abouth1').style.color = li;
     caret = document.getElementById('aboutCaret').style.backgroundColor = li;
+    mainInput = document.getElementById('mainInput').style.color = input;
+    mainPlaceholder = document.getElementById('mainPlaceholder').style.color = placeHolder;
 };
+
+paletteChange('white', 'white', 'rgb(48, 45, 53)', 'black', 'black', 'black', 'gray')
