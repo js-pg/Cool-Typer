@@ -6478,8 +6478,11 @@ quotes = [
       "text": "You can complain because roses have thorns, or you can rejoice because thorns have roses."
     }
   ]
-  
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 
 const nthElement = (arr, n = 0) => (n > 0 ? arr.slice(n, n + 1) : arr.slice(n))[0];
 
-randomQuote = nthElement(quotes, 500)
+randomQuote = (nthElement(quotes, getRandomInt(quotes.length)))['text']
