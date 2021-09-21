@@ -6483,6 +6483,27 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-const nthElement = (arr, n = 0) => (n > 0 ? arr.slice(n, n + 1) : arr.slice(n))[0];
+function returnQuote(array) {
+    const nthElement = (arr, n = 0) => (n > 0 ? arr.slice(n, n + 1) : arr.slice(n))[0];
 
-randomQuote = (nthElement(quotes, getRandomInt(quotes.length)))['text']
+    var randomQuote = (nthElement(array, getRandomInt(array.length)))['text'];
+    var randomQuoteArray = randomQuote.split(' ');
+    return randomQuoteArray
+}
+
+function appendQuote(){
+    var quotesArray = returnQuote(quotes);
+    document.getElementById('mainPlaceholder').innerText = ''
+
+
+    for (let i = 0; i < quotesArray.length; i++) {
+        var userInputDiv = document.getElementById('mainPlaceholder');
+        console.log(quotesArray[i]);
+        var spanNode = document.createElement('span');
+        spanNode.id = 'word' + i;
+        spanNode.classList.add("inputSpan")
+        spanNode.innerText = quotesArray[i] + ' '
+        userInputDiv.appendChild(spanNode)
+      };
+};
+appendQuote();
