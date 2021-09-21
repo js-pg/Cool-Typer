@@ -6479,6 +6479,8 @@ quotes = [
     }
   ]
 
+document.getElementById('mainInput').value = null;
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
@@ -6506,4 +6508,31 @@ function appendQuote(){
         userInputDiv.appendChild(spanNode)
       };
 };
-appendQuote();
+
+function highlightText(elementId){
+    document.getElementById(elementId).style.backgroundColor = 'rgba(127, 127, 127, 0.39)'
+    document.getElementById(elementId).style.borderRadius = '4px'
+}
+
+//function mainFunc(){
+//    appendQuote()
+//    
+//    const mainPlaceholder = document.getElementById('mainPlaceholder')
+//    for (let i = 0; i < mainPlaceholder.children.length; i++) {
+//        highlightText(('word' + i))
+//        document.getElementById('mainInput').addEventListener('keypress', function(event) {
+//            if (event.keyCode == 32) {
+//                var submittedWord = null + document.getElementById('mainInput').value 
+//                if (submittedWord == document.getElementById('word' + i).innerText){
+//                    console.log('verygood')
+//                    console.log('ajhglakhj')
+//
+//                }
+//                document.getElementById('mainInput').value = null;
+//            }
+//        })
+//      }
+//}
+function mainFunc() {
+    appendQuote()
+}
