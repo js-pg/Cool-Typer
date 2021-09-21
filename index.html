@@ -24,9 +24,9 @@
                             <span>Color Theme</span>
                             <div class="dropdown-content">
                                 <p class="pDropdown" onclick="paletteChange('white', 'white', 'rgb(48, 45, 53)', 'black', 'black', 'black', 'gray')">Default</p>
-                                <p class="pDropdown" onclick="paletteChange('rgb(39, 39, 39)', 'rgb(29, 29, 29)', 'white', 'white', 'white', 'white', 'gray')">Dark</p>
-                                <p class="pDropdown" onclick="paletteChange('rgb(204, 153, 102)', 'rgb(74, 44, 42)', 'rgb(27, 0, 0)', 'white', 'white')">Peanut</p>
-                                <p class="pDropdown">Hello World!</p>
+                                <p class="pDropdown" onclick="paletteChange('rgb(39, 39, 39)', 'rgb(29, 29, 29)', 'white', 'white', 'white', 'white', 'grey')">Dark</p>
+                                <p class="pDropdown">Cream</p>
+                                <p class="pDropdown" onclick="paletteChange('rgb(204, 153, 102)', 'rgb(74, 44, 42)', 'rgb(27, 0, 0)', 'white', 'white', 'white', '#93531a')">Peanut</p>
                                 <p class="pDropdown">Hello World!</p>
                                 <p class="pDropdown">Hello World!</p>
                                 <p class="pDropdown">Hello World!</p>
@@ -41,8 +41,8 @@
 
         </nav>
         <div class="main" id="main">
-            <div class="mainPlaceholder"><h4 id="mainPlaceholder"></h4></div>
-            <input type="text" id="mainInput" class="mainInput">
+            <div class="mainPlaceholder" id="mainPlaceholder"></div>
+            <input type="text" id="mainInput" class="mainInput" placeholder="Start typing here..." autofocus="autofocus" onfocus="this.select()">
         </div>
         
 
