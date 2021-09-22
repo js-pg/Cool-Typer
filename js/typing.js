@@ -6514,25 +6514,28 @@ function highlightText(elementId){
     document.getElementById(elementId).style.borderRadius = '4px'
 }
 
-//function mainFunc(){
-//    appendQuote()
-//    
-//    const mainPlaceholder = document.getElementById('mainPlaceholder')
-//    for (let i = 0; i < mainPlaceholder.children.length; i++) {
-//        highlightText(('word' + i))
-//        document.getElementById('mainInput').addEventListener('keypress', function(event) {
-//            if (event.keyCode == 32) {
-//                var submittedWord = null + document.getElementById('mainInput').value 
-//                if (submittedWord == document.getElementById('word' + i).innerText){
-//                    console.log('verygood')
-//                    console.log('ajhglakhj')
-//
-//                }
-//                document.getElementById('mainInput').value = null;
-//            }
-//        })
-//      }
-//}
-function mainFunc() {
+function mainFunc(){
     appendQuote()
+    
+    const mainPlaceholder = document.getElementById('mainPlaceholder')
+    for (let i = 0; i < mainPlaceholder.children.length; i++) {
+        highlightText(('word' + i))
+        document.getElementById('mainInput').addEventListener('keypress', function(event) {
+            if (event.keyCode == 32) {
+                var submittedWord = null + document.getElementById('mainInput').value 
+                if (submittedWord == document.getElementById('word' + i).innerText){
+                    console.log('verygood')
+                    console.log('ajhglakhj')
+                
+
+                }
+                else{
+                    console.log(document.getElementById('word' + 2).innerText)
+                }
+                document.getElementById('mainInput').value = null;
+            }
+        })
+      }
 }
+
+

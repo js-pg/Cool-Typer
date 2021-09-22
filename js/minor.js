@@ -88,11 +88,10 @@ function paletteChange(main, main2, highlight, li, mainLi, input, placeHolder) {
     caret = document.getElementById('aboutCaret').style.backgroundColor = li;
     mainInput = document.getElementById('mainInput').style.color = input;
     mainPlaceholder = document.getElementById('mainPlaceholder').style.color = placeHolder;
-    wordSpans = document.getElementsByClassName('inputSpan').style.color[0] = red;
 };
 
 paletteChange('white', 'white', 'rgb(48, 45, 53)', 'black', 'black', 'black', 'gray')
 
 var mainInput = document.getElementById('mainInput');
-input.focus()
-input.select()
+mainInput.focus()
+mainInput.select()
