@@ -228,3 +228,40 @@ h4 {
 .inputSpan {
     font-size: 1.5rem;
 }
+
+.refreshContainer {
+    padding-top: 15px;
+    font-family: 'Source Code Pro';
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 12px; 
+    user-select: none; 
+} 
+ 
+#refreshText::selection { 
+    background-color: #dddddd; 
+ 
+} 
+ 
+#vertLine { 
+    user-select: none; 
+    float: left; 
+} 
+ 
+#vertLine:hover { 
+    text-decoration: none; 
+} 
+ 
+select { 
+    background-color: transparent; 
+    outline: none; 
+    font-family: 'Source Code Pro'; 
+    border: none; 
+    cursor: pointer; 
+} 
+ 
+option { 
+    cursor: pointer;
+    font-family: 'Source Code Pro'; 
+} 

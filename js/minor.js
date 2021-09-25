@@ -88,6 +88,10 @@ function paletteChange(main, main2, highlight, li, mainLi, input, placeHolder) {
     caret = document.getElementById('aboutCaret').style.backgroundColor = li;
     mainInput = document.getElementById('mainInput').style.color = input;
     mainPlaceholder = document.getElementById('mainPlaceholder').style.color = placeHolder;
+    textRefresh = document.getElementById('refreshText').style.color = placeHolder;
+    textRefresh = document.getElementById('vertLine').style.color = placeHolder;
+    textRefresh = document.getElementById('quoteTypeDropdown').style.color = placeHolder;
+
 };
 
 paletteChange('white', 'white', 'rgb(48, 45, 53)', 'black', 'black', 'black', 'gray')

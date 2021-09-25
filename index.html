@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 </head>
+
+<!-- https://github.com/bigmusclemann -->
+
 <body id="body">
     <div class="container" id="container">
         <nav class="navDesktop" id="navDesktop">
@@ -43,6 +46,15 @@
         <div class="main" id="main">
             <div class="mainPlaceholder" id="mainPlaceholder"></div>
             <input type="text" id="mainInput" class="mainInput" placeholder="Start typing here..." autofocus="autofocus" onfocus="this.select()">
+            <div class="refreshContainer"><a href="javascript:void(0);" id="refreshText" onclick="mainFunc();" title="Refresh text.">Refresh Text</a><p id="vertLine">|</p>
+            <a href="javascript:void(0)" id="quoteType">  <select id="quoteTypeDropdown" title="Change quote type." onchange="userChangeQuote()">
+                <option id="option1" value="normal">Normal</option>
+                <option id="option2" value="funny">Funny</option>
+                <option id="option3" value="all">Both</option>
+
+              </select></a>
+
+        </div>
         </div>
         
 

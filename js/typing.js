@@ -1,4 +1,4 @@
-quotes = [
+quotesNormal = [
     {
       "author": "Abraham Lincoln",
       "text": "A house divided against itself cannot stand."
@@ -6479,6 +6479,466 @@ quotes = [
     }
   ]
 
+  quotesFunny = [
+    {
+      "author":"Abraham Lincoln",
+      "text":"No man has a good enough memory to be a successful liar."
+    },
+    {
+      "author":"Albert Einstein",
+      "text":"When you are courting a nice girl an hour seems like a second. When you sit on a red-hot cinder a second seems like an hour. That's relativity."
+    },
+    {
+      "author":"Alexander Woollcott",
+      "text":"Everything I like is either illegal, immoral or fattening."
+    },
+    {
+      "author":"Alfred Hitchcock",
+      "text":"Television has brought back murder into the home - where it belongs."
+    },
+    {
+      "author":"Alice Roosevelt Longworth",
+      "text":"If you haven't got anything nice to say about anybody, come sit next to me."
+    },
+    {
+      "author":"Anthony Burgess",
+      "text":"Laugh and the world laughs with you, snore and you sleep alone."
+    },
+    {
+      "author":"Arthur C. Clarke",
+      "text":"The best measure of a man's honesty isn't his income tax return. It's the zero adjust on his bathroom scale."
+    },
+    {
+      "author":"Benjamin Franklin",
+      "text":"Wine is constant proof that God loves us and loves to see us happy."
+    },
+    {
+      "author":"Bill Copeland",
+      "text":"After all is said and done, sit down."
+    },
+    {
+      "author":"Bill Moyers",
+      "text":"I own and operate a ferocious ego."
+    },
+    {
+      "author":"Bill Vaughan",
+      "text":"The tax collector must love poor people, he's creating so many of them."
+    },
+    {
+      "author":"Bill Watterson",
+      "text":"Reality continues to ruin my life."
+    },
+    {
+      "author":"Billy Connolly",
+      "text":"My definition of an intellectual is someone who can listen to the William Tell Overture without thinking of the Lone Ranger."
+    },
+    {
+      "author":"Buddy Hackett",
+      "text":"As a child my family's menu consisted of two choices: take it or leave it."
+    },
+    {
+      "author":"Casey Stengel",
+      "text":"All right everyone, line up alphabetically according to your height."
+    },
+    {
+      "author":"Clint Eastwood",
+      "text":"They say marriages are made in Heaven. But so is thunder and lightning."
+    },
+    {
+      "author":"Dave Barry",
+      "text":"The four building blocks of the universe are fire, water, gravel and vinyl."
+    },
+    {
+      "author":"Don Marquis",
+      "text":"Procrastination is the art of keeping up with yesterday."
+    },
+    {
+      "author":"Don Marquis",
+      "text":"An idea isn't responsible for the people who believe in it."
+    },
+    {
+      "author":"Douglas Adams",
+      "text":"I love deadlines. I like the whooshing sound they make as they fly by."
+    },
+    {
+      "author":"E. B. White",
+      "text":"Prejudice is a great time saver. You can form opinions without having to get the facts."
+    },
+    {
+      "author":"Elayne Boosler",
+      "text":"I have six locks on my door all in a row. When I go out, I lock every other one. I figure no matter how long somebody stands there picking the locks, they are always locking three."
+    },
+    {
+      "author":"Elbert Hubbard",
+      "text":"Do not take life too seriously. You will never get out of it alive."
+    },
+    {
+      "author":"Eldridge Cleaver",
+      "text":"Too much agreement kills a chat."
+    },
+    {
+      "author":"Ellen DeGeneres",
+      "text":"People always ask me, 'Were you funny as a child?' Well, no, I was an accountant."
+    },
+    {
+      "author":"Ellen DeGeneres",
+      "text":"My grandmother started walking five miles a day when she was sixty. She's ninety-seven now, and we don't know where the hell she is."
+    },
+    {
+      "author":"Elon Musk",
+      "text":"I would like to die on Mars. Just not on impact."
+    },
+    {
+      "author":"Emo Philips",
+      "text":"I was the kid next door's imaginary friend."
+    },
+    {
+      "author":"Erma Bombeck",
+      "text":"Guilt: the gift that keeps on giving."
+    },
+    {
+      "author":"Fran Lebowitz",
+      "text":"Food is an important part of a balanced diet."
+    },
+    {
+      "author":"Frank Sinatra",
+      "text":"I'm for whatever gets you through the night."
+    },
+    {
+      "author":"Franklin P. Jones",
+      "text":"One advantage of talking to yourself is that you know at least somebody's listening."
+    },
+    {
+      "author":"George Bernard Shaw",
+      "text":"If you cannot get rid of the family skeleton, you may as well make it dance."
+    },
+    {
+      "author":"George Burns",
+      "text":"Happiness is having a large, loving, caring, close-knit family in another city."
+    },
+    {
+      "author":"George Carlin",
+      "text":"Frisbeetarianism is the belief that when you die, your soul goes up on the roof and gets stuck."
+    },
+    {
+      "author":"Groucho Marx",
+      "text":"A child of five would understand this. Send someone to fetch a child of five."
+    },
+    {
+      "author":"Hedy Lamarr",
+      "text":"Any girl can be glamorous. All you have to do is stand still and look stupid."
+    },
+    {
+      "author":"Henny Youngman",
+      "text":"If you're going to do something tonight that you'll be sorry for tomorrow morning, sleep late."
+    },
+    {
+      "author":"Henry A. Kissinger",
+      "text":"There cannot be a crisis next week. My schedule is already full."
+    },
+    {
+      "author":"Herb Caen",
+      "text":"I have a memory like an elephant. I remember every elephant I've ever met."
+    },
+    {
+      "author":"Hillary Clinton",
+      "text":"If I want to knock a story off the front page, I just change my hairstyle."
+    },
+    {
+      "author":"Isaac Asimov",
+      "text":"People who think they know everything are a great annoyance to those of us who do."
+    },
+    {
+      "author":"Jane Wagner",
+      "text":"All my life, I always wanted to be somebody. Now I see that I should have been more specific."
+    },
+    {
+      "author":"Jane Wagner",
+      "text":"When we talk to God, we're praying. When God talks to us, we're schizophrenic."
+    },
+    {
+      "author":"Jerry Seinfeld",
+      "text":"It's amazing that the amount of news that happens in the world every day always just exactly fits the newspaper."
+    },
+    {
+      "author":"Jim Carrey",
+      "text":"Behind every great man is a woman rolling her eyes."
+    },
+    {
+      "author":"Joan Rivers",
+      "text":"I knew I was an unwanted baby when I saw that my bath toys were a toaster and a radio."
+    },
+    {
+      "author":"Joey Adams",
+      "text":"Do not worry about avoiding temptation. As you grow older it will avoid you."
+    },
+    {
+      "author":"Josh Billings",
+      "text":"There's a great power in words, if you don't hitch too many of them together."
+    },
+    {
+      "author":"Josh Billings",
+      "text":"Flattery is like cologne water, to be smelt, not swallowed."
+    },
+    {
+      "author":"Katharine Hepburn",
+      "text":"Life is hard. After all, it kills you."
+    },
+    {
+      "author":"Lana Turner",
+      "text":"A successful man is one who makes more money than his wife can spend. A successful woman is one who can find such a man."
+    },
+    {
+      "author":"Laurence J. Peter",
+      "text":"If two wrongs don't make a right, try three."
+    },
+    {
+      "author":"Laurence J. Peter",
+      "text":"Originality is the fine art of remembering what you hear but forgetting where you heard it."
+    },
+    {
+      "author":"Laurence J. Peter",
+      "text":"If a cluttered desk is the sign of a cluttered mind, what is the significance of a clean desk?"
+    },
+    {
+      "author":"Lenny Bruce",
+      "text":"Miami Beach is where neon goes to die."
+    },
+    {
+      "author":"Lily Tomlin",
+      "text":"I always wanted to be somebody, but now I realize I should have been more specific."
+    },
+    {
+      "author":"Luis Bunuel",
+      "text":"Age is something that doesn't matter, unless you are a cheese."
+    },
+    {
+      "author":"Mae West",
+      "text":"Between two evils, I always pick the one I never tried before."
+    },
+    {
+      "author":"Margaret Mead",
+      "text":"Always remember that you are absolutely unique. Just like everyone else."
+    },
+    {
+      "author":"Mark Twain",
+      "text":"Get your facts first, then you can distort them as you please."
+    },
+    {
+      "author":"Mark Twain",
+      "text":"Go to Heaven for the climate, Hell for the company."
+    },
+    {
+      "author":"Mark Twain",
+      "text":"All generalizations are false, including this one."
+    },
+    {
+      "author":"Mel Brooks",
+      "text":"If God wanted us to fly, He would have given us tickets."
+    },
+    {
+      "author":"Milton Berle",
+      "text":"A committee is a group that keeps minutes and loses hours."
+    },
+    {
+      "author":"Milton Berle",
+      "text":"We owe a lot to Thomas Edison - if it wasn't for him, we'd be watching television by candlelight."
+    },
+    {
+      "author":"Mitch Hedberg",
+      "text":"My fake plants died because I did not pretend to water them."
+    },
+    {
+      "author":"Oliver Herford",
+      "text":"A woman's mind is cleaner than a man's: She changes it more often."
+    },
+    {
+      "author":"Oscar Levant",
+      "text":"Roses are red, violets are blue, I'm schizophrenic, and so am I."
+    },
+    {
+      "author":"Oscar Wilde",
+      "text":"I can resist everything except temptation."
+    },
+    {
+      "author":"P. J. O'Rourke",
+      "text":"Cleanliness becomes more important when godliness is unlikely."
+    },
+    {
+      "author":"Paul Simon",
+      "text":"I was eating in a Chinese restaurant downtown. There was a dish called Mother and Child Reunion. It's chicken and eggs. And I said, I gotta use that one."
+    },
+    {
+      "author":"Phyllis Diller",
+      "text":"The only time I ever enjoyed ironing was the day I accidentally got gin in the steam iron."
+    },
+    {
+      "author":"Red Skelton",
+      "text":"Any kid will run any errand for you, if you ask at bedtime."
+    },
+    {
+      "author":"Richard Dawkins",
+      "text":"By all means let's be open-minded, but not so open-minded that our brains drop out."
+    },
+    {
+      "author":"Robert Benchley",
+      "text":"Drawing on my fine command of the English language, I said nothing."
+    },
+    {
+      "author":"Robert Byrne",
+      "text":"Until you walk a mile in another man's moccasins you can't imagine the smell."
+    },
+    {
+      "author":"Robin Williams",
+      "text":"I'm sorry, if you were right, I'd agree with you."
+    },
+    {
+      "author":"Robin Williams",
+      "text":"Why do they call it rush hour when nothing moves?"
+    },
+    {
+      "author":"Rodney Dangerfield",
+      "text":"I haven't spoken to my wife in years. I didn't want to interrupt her."
+    },
+    {
+      "author":"Rodney Dangerfield",
+      "text":"I found there was only one way to look thin: hang out with fat people."
+    },
+    {
+      "author":"Rodney Dangerfield",
+      "text":"I looked up my family tree and found out I was the sap."
+    },
+    {
+      "author":"Ron White",
+      "text":"I believe that if life gives you lemons, you should make lemonade... And try to find somebody whose life has given them vodka, and have a party."
+    },
+    {
+      "author":"Samuel Johnson",
+      "text":"One of the disadvantages of wine is that it makes a man mistake words for thoughts."
+    },
+    {
+      "author":"Spike Milligan",
+      "text":"A sure cure for seasickness is to sit under a tree."
+    },
+    {
+      "author":"Steve Martin",
+      "text":"A day without sunshine is like, you know, night."
+    },
+    {
+      "author":"Steve Martin",
+      "text":"Boy, those French: they have a different word for everything!"
+    },
+    {
+      "author":"Terry Pratchett",
+      "text":"The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it."
+    },
+    {
+      "author":"Theodore Roosevelt",
+      "text":"If you could kick the person in the pants responsible for most of your trouble, you wouldn't sit for a month."
+    },
+    {
+      "author":"Thomas A. Edison",
+      "text":"The chief function of the body is to carry the brain around."
+    },
+    {
+      "author":"Thomas Sowell",
+      "text":"It takes considerable knowledge just to realize the extent of your own ignorance."
+    },
+    {
+      "author":"Thor Heyerdahl",
+      "text":"Progress is man's ability to complicate simplicity."
+    },
+    {
+      "author":"W. H. Auden",
+      "text":"We are all here on earth to help others; what on earth the others are here for I don't know."
+    },
+    {
+      "author":"Walt Disney",
+      "text":"I love Mickey Mouse more than any woman I have ever known."
+    },
+    {
+      "author":"Will Rogers",
+      "text":"Be thankful we're not getting all the government we're paying for."
+    },
+    {
+      "author":"William Feather",
+      "text":"If you're naturally kind, you attract a lot of people you don't like."
+    },
+    {
+      "author":"Wilson Mizner",
+      "text":"Gambling: The sure way of getting nothing for something."
+    },
+    {
+      "author":"Winston Churchill",
+      "text":"I may be drunk, Miss, but in the morning I will be sober and you will still be ugly."
+    },
+    {
+      "author":"Woody Allen",
+      "text":"I failed to make the chess team because of my height."
+    },
+    {
+      "author":"Yogi Berra",
+      "text":"I never said most of the things I said."
+    },
+    {
+      "author":"Yogi Berra",
+      "text":"Even Napoleon had his Watergate."
+    },
+    {
+      "author":"Chris Rock",
+      "text":"You know the world is going crazy when the best rapper is a white guy, the best golfer is a black guy, the tallest guy in the NBA is Chinese, and the Swiss hold the America's Cup."
+    },
+    {
+      "author":"Mark Twain",
+      "text":"I did not attend his funeral, but I sent a nice letter saying I approved of it."
+
+    },
+    {
+      "author":"Jerry Seinfeld",
+      "text":"If a book about failures doesn't sell, is it a success?"
+    },
+    {
+      "author":"Rodney Dangerfield",
+      "text":"I came from a real tough neighborhood. Once a guy pulled a knife on me. I knew he wasn't a professional, the knife had butter on it."
+    },
+    {
+      "author":"Will Rogers",
+      "text":"Never miss a good chance to shut up."
+    },
+    {
+      "author":"Harry Potter",
+      "text":"Just because you’ve got the emotional range of a teaspoon doesn’t mean we all have."
+
+    },
+  ]
+  
+
+
+function quoteType(type) {
+  if (type == 'funny'){
+    quotes = quotesFunny;
+  }
+  else if (type == 'normal'){
+    quotes = quotesNormal;
+  }
+  else if (type == 'all'){
+    quotes = quotesNormal.concat(quotesFunny)  
+  }
+  mainFunc()
+};
+/*
+document.getElementById('option1').onclick = quoteType('normal');
+document.getElementById('option2').onclick = quoteType('funny');
+document.getElementById('option3').onclick = quoteType('all');
+*/
+
+function userChangeQuote() {
+  var x = document.getElementById("quoteTypeDropdown").value;
+  quoteType(x)
+}
+
+quoteType('all');
+
 document.getElementById('mainInput').value = null;
 
 function getRandomInt(max) {
@@ -6514,28 +6974,49 @@ function highlightText(elementId){
     document.getElementById(elementId).style.borderRadius = '4px'
 }
 
-function mainFunc(){
-    appendQuote()
-    
-    const mainPlaceholder = document.getElementById('mainPlaceholder')
-    for (let i = 0; i < mainPlaceholder.children.length; i++) {
-        highlightText(('word' + i))
-        document.getElementById('mainInput').addEventListener('keypress', function(event) {
-            if (event.keyCode == 32) {
-                var submittedWord = null + document.getElementById('mainInput').value 
-                if (submittedWord == document.getElementById('word' + i).innerText){
-                    console.log('verygood')
-                    console.log('ajhglakhj')
-                
+//function mainFunc(){
+//    appendQuote()
+//    
+//    const mainPlaceholder = document.getElementById('mainPlaceholder')
+//    for (let i = 0; i < mainPlaceholder.children.length; i++) {
+//        highlightText(('word' + i))
+//        document.getElementById('mainInput').addEventListener('keypress', function(event) {
+//            if (event.keyCode == 32) {
+//                var submittedWord = null + document.getElementById('mainInput').value 
+//                if (submittedWord == document.getElementById('word' + i).innerText){
+//                    console.log('verygood')
+//                    console.log('ajhglakhj')
+//                
+//
+//                }
+//                else{
+//                    console.log(document.getElementById('word' + 2).innerText)
+//                }
+//                document.getElementById('mainInput').value = null;
+//            }
+//        })
+//      }
+//}
 
-                }
-                else{
-                    console.log(document.getElementById('word' + 2).innerText)
-                }
-                document.getElementById('mainInput').value = null;
-            }
-        })
+var limit = null;
+
+function mainFunc(){
+
+  appendQuote()
+  var limit = document.getElementById("mainPlaceholder").children.length;
+  var typedWords = -1
+    window.onkeydown=function(event){
+      if(event.keyCode==32){
+          //document.getElementById('mainInput').placeholder = '';
+          console.log(document.getElementById('mainInput').value.replace(' ', ''));
+
+          document.getElementById('mainInput').value = '';
+
+          typedWords += 1
+          console.log(typedWords)
       }
 }
+  
+  }
 
-
+  
