@@ -4,6 +4,8 @@
     scrollbar-color: grey transparent;
     scrollbar-width: none ;
     transition: .15s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 *::selection {
