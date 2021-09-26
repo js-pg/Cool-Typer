@@ -6988,7 +6988,6 @@ function appendQuote(){
 
     for (let i = 0; i < quotesArray.length; i++) {
         var userInputDiv = document.getElementById('mainPlaceholder');
-        console.log(quotesArray[i]);
         var spanNode = document.createElement('span');
         var spaneNodeSpace = document.createElement('span')
         spanNode.id = 'word' + i;
@@ -7009,8 +7008,6 @@ function removeHighlightText(elementId){
   document.getElementById(elementId).style.backgroundColor = 'transparent'
 }
 
-var yuyuyu = 0
-
 var limit = null;
 
 document.getElementById('mainInput').onkeydown=function(){
@@ -7030,9 +7027,12 @@ function mainFunc(){
           console.log('user typed: ' + document.getElementById('mainInput').value.replace(' ', ''));
           console.log('expected word: ' + document.getElementById('word' + typedWords).innerText)
           if(document.getElementById('mainInput').value.replace(' ', '') === document.getElementById('word' + typedWords.toString()).innerText.replace(' ', '')){
-            console.log('correct')
+            console.log('%c Correct', 'color:green')
+            console.log('---------------------------------------------------------------------------------')
           } else {
-            console.log('incorrect')
+            console.log('%c Incorrect', 'color:red; font-weight:bolder')
+            console.log('---------------------------------------------------------------------------------')
+
           }
 
 
@@ -7041,7 +7041,6 @@ function mainFunc(){
           typedWords += 1
           highlightText(('word' + typedWords))
           removeHighlightText(('word' + (typedWords - 1)))
-          console.log(typedWords)
       }
 }
   
