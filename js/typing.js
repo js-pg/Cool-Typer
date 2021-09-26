@@ -7004,6 +7004,12 @@ function highlightText(elementId){
     document.getElementById(elementId).style.borderRadius = '4px'
 }
 
+function errorHighlightText(elementId){
+  document.getElementById(elementId).style.color = 'red'
+  document.getElementById(elementId).style.borderRadius = '4px'
+}
+
+
 function removeHighlightText(elementId){
   document.getElementById(elementId).style.backgroundColor = 'transparent'
 }
@@ -7028,11 +7034,12 @@ function mainFunc(){
           console.log('expected word: ' + document.getElementById('word' + typedWords).innerText)
           if(document.getElementById('mainInput').value.replace(' ', '') === document.getElementById('word' + typedWords.toString()).innerText.replace(' ', '')){
             console.log('%c Correct', 'color:green')
-            console.log('---------------------------------------------------------------------------------')
+            console.log('-------------------------------------->')
           } else {
-            console.log('%c Incorrect', 'color:red; font-weight:bolder')
-            console.log('---------------------------------------------------------------------------------')
-
+            console.log('%c Incorrect', 'color:red; font-weight:bolder; font-size:15px')
+            console.log('-------------------------------------->')
+            removeHighlightText(('word' + typedWords))
+            errorHighlightText(('word' + typedWords))
           }
 
 
