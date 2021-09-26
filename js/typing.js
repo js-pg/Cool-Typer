@@ -1,3 +1,16 @@
+//          _  _    _          _                          __
+//    __ _ (_)| |_ | |_  _  _ | |__     __  ___  _ __    / /
+//   / _` || ||  _|| ' \| || || '_ \ _ / _|/ _ \| '  \  / / 
+//   \__, ||_| \__||_||_|\_,_||_.__/(_)\__|\___/|_|_|_|/_/  
+//   |___/                                                  
+//   _     _                            _                               
+//   | |__ (_) __ _  _ __  _  _  ___ __ | | ___  _ __   __ _  _ _   _ _  
+//   | '_ \| |/ _` || '  \| || |(_-</ _|| |/ -_)| '  \ / _` || ' \ | ' \ 
+//   |_.__/|_|\__, ||_|_|_|\_,_|/__/\__||_|\___||_|_|_|\__,_||_||_||_||_|
+//            |___/                                                      
+
+
+
 quotesNormal = [
     {
       "author": "Abraham Lincoln",
@@ -6937,6 +6950,19 @@ function userChangeQuote() {
   quoteType(x)
 }
 
+
+
+
+document.onkeydown = function(e){
+    e = e || window.event;
+    var key = e.which || e.keyCode;
+    if(key===17){//             reset quote on 'ctrl'
+        mainFunc();
+        document.getElementById('mainInput').value = '';
+    }
+}
+
+
 quoteType('all');
 
 document.getElementById('mainInput').value = null;
@@ -6958,20 +6984,29 @@ function appendQuote(){
     document.getElementById('mainPlaceholder').innerText = ''
 
 
+
+
     for (let i = 0; i < quotesArray.length; i++) {
         var userInputDiv = document.getElementById('mainPlaceholder');
         console.log(quotesArray[i]);
         var spanNode = document.createElement('span');
+        var spaneNodeSpace = document.createElement('span')
         spanNode.id = 'word' + i;
         spanNode.classList.add("inputSpan")
-        spanNode.innerText = quotesArray[i] + ' '
+        spanNode.innerText = quotesArray[i] 
+        spaneNodeSpace.innerText = ' '
         userInputDiv.appendChild(spanNode)
+        userInputDiv.appendChild(spaneNodeSpace)
       };
 };
 
 function highlightText(elementId){
     document.getElementById(elementId).style.backgroundColor = 'rgba(127, 127, 127, 0.39)'
     document.getElementById(elementId).style.borderRadius = '4px'
+}
+
+function removeHighlightText(elementId){
+  document.getElementById(elementId).style.backgroundColor = 'transparent'
 }
 
 //function mainFunc(){
@@ -6998,21 +7033,38 @@ function highlightText(elementId){
 //      }
 //}
 
+var yuyuyu = 0
+
 var limit = null;
 
-function mainFunc(){
+document.getElementById('mainInput').onkeydown=function(){
+  scrollMain()
+}
 
+function mainFunc(){
   appendQuote()
+  var typedWords = 0
+
   var limit = document.getElementById("mainPlaceholder").children.length;
-  var typedWords = -1
+    highlightText('word0')
     window.onkeydown=function(event){
-      if(event.keyCode==32){
+      if(event.keyCode==32){//   <<< if spacebar pressed, do remaining functions and clear input for next words
           //document.getElementById('mainInput').placeholder = '';
-          console.log(document.getElementById('mainInput').value.replace(' ', ''));
+
+          console.log('user typed: ' + document.getElementById('mainInput').value.replace(' ', ''));
+          console.log('expected word: ' + document.getElementById('word' + typedWords).innerText)
+          if(document.getElementById('mainInput').value.replace(' ', '') === document.getElementById('word' + typedWords.toString()).innerText.replace(' ', '')){
+            console.log('correct')
+          } else {
+            console.log('incorrect')
+          }
+
 
           document.getElementById('mainInput').value = '';
 
           typedWords += 1
+          highlightText(('word' + typedWords))
+          removeHighlightText(('word' + (typedWords - 1)))
           console.log(typedWords)
       }
 }
