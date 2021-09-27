@@ -98,7 +98,7 @@ function paletteChange(main, main2, highlight, li, mainLi, input, placeHolder) {
     textRefresh = document.getElementById('refreshText').style.color = placeHolder;
     textRefresh = document.getElementById('vertLine').style.color = placeHolder;
     textRefresh = document.getElementById('quoteTypeDropdown').style.color = placeHolder;
-
+    author = document.getElementById('author').style.color = placeHolder;
 };
 
 paletteChange('white', 'white', 'rgb(48, 45, 53)', 'black', 'black', 'black', 'gray')

@@ -6698,10 +6698,6 @@ quotesNormal = [
       "text":"Life is hard. After all, it kills you."
     },
     {
-      "author":"Lana Turner",
-      "text":"A successful man is one who makes more money than his wife can spend. A successful woman is one who can find such a man."
-    },
-    {
       "author":"Laurence J. Peter",
       "text":"If two wrongs don't make a right, try three."
     },
@@ -6768,6 +6764,10 @@ quotesNormal = [
     {
       "author":"Oscar Levant",
       "text":"Roses are red, violets are blue, I'm schizophrenic, and so am I."
+    },
+    {
+      "author":"A$AP Rocky, Everyday",
+      "text": "Can't drive, I'm legally blind"
     },
     {
       "author":"Oscar Wilde",
@@ -6923,6 +6923,19 @@ quotesNormal = [
       "text":"Just because you’ve got the emotional range of a teaspoon doesn’t mean we all have."
 
     },
+    {
+      "author":"Tyler, the Creator, 911 / Mr. Lonely",
+      "text":"I say the loudest in the room is probably the loneliest one in the room."
+    },
+    {
+      "author":"Tyler, the Creator", 
+      "text":"In High School I was friends with the white skaters, the black rappers and the nerds."
+    },
+    {
+      "author":"Kanye West, Black Skinhead",
+      "text":"I keep it 300 like the Romans."
+
+    }
   ]
 
   words = [
@@ -7908,8 +7921,7 @@ quotesNormal = [
     {"text": "young"}
   ]
   
-  
-
+document.getElementById("quoteTypeDropdown").value = 'normal';
 
 function quoteType(type) {
   if (type == 'funny'){
@@ -7958,9 +7970,10 @@ function getRandomInt(max) {
 }
 
 function returnQuote(array) {
+    randomNum = getRandomInt(array.length)
     const nthElement = (arr, n = 0) => (n > 0 ? arr.slice(n, n + 1) : arr.slice(n))[0];
-
-    var randomQuote = (nthElement(array, getRandomInt(array.length)))['text'];
+    document.getElementById('author').innerText = '-' + (nthElement(array, randomNum))['author']
+    var randomQuote = (nthElement(array, randomNum))['text'];
     var randomQuoteArray = randomQuote.split(' ');
     return randomQuoteArray
 }
@@ -8019,6 +8032,7 @@ function mainFunc(){
 
           console.log('user typed: ' + document.getElementById('mainInput').value.replace(' ', ''));
           console.log('expected word: ' + document.getElementById('word' + typedWords).innerText)
+          document.getElementById('main').style.cursor = 'hidden';
           if(document.getElementById('mainInput').value.replace(' ', '') === document.getElementById('word' + typedWords.toString()).innerText.replace(' ', '')){
             console.log('%c Correct', 'color:green')//  <<css stylings for no reason other than fun
             console.log('-------------------------------------->')
