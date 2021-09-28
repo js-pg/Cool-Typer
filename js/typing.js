@@ -8014,17 +8014,22 @@ function removeHighlightText(elementId){
   document.getElementById(elementId).style.backgroundColor = 'transparent'
 }
 
-var limit = null;
 
 document.getElementById('mainInput').onkeydown=function(){
   scrollMain()
+}
+
+function clearPlaceholder(){
+  for (let i = 0; i < document.getElementById('mainPlaceholder').children.length; i++) {
+    removeHighlightText(word + i)
+  };
 }
 
 function mainFunc(){
   appendQuote()
   var typedWords = 0
 
-  var limit = document.getElementById("mainPlaceholder").children.length;
+  var limit = document.getElementById("mainPlaceholder").children.length / 2;
     highlightText('word0')
     window.onkeydown=function(event){
       if(event.keyCode==32){//   <<< if spacebar pressed, do remaining functions and clear input for next words
@@ -8038,13 +8043,22 @@ function mainFunc(){
             console.log('-------------------------------------->')
             errorHighlightText(('word' + typedWords), 'black')
 
-          } else {
+          } 
+
+          
+
+          else {
             console.log('%c Incorrect', 'color:red; font-weight:bolder; font-size:15px')
             console.log('-------------------------------------->')
-            errorHighlightText(('word' + typedWords), 'red')
+            errorHighlightText(('word' + typedWords), 'red');
+            console.log(typedWords);
+          };
+
+          if (typedWords == limit - 1){
+            mainFunc()
+            clearPlaceholder()
           }
-
-
+          console.log(typedWords)
           document.getElementById('mainInput').value = '';
 
           typedWords += 1
