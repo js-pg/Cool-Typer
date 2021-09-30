@@ -15,64 +15,69 @@
 <!-- https://github.com/bigmusclemann -->
 
 <body id="body">
-    <div class="container" id="container">
-        <nav class="navDesktop" id="navDesktop">
-            <div class="menu">
-                <div class="table">
-                    <ul>
-                        <li><a href="#" class="mainLi" title="Home" id="mainLi">Cool Typer 😎</a></li>
-                        <li><a href="javascript:void(0);" onclick="scrollMain()" class="navLi" id="li1" title="Type">Type</a></li>
-                        <li><a href="javascript:void(0);" onclick="scrollAbout()" class="navLi" id="li2" title="About">About</a></li>
-                        <li><a href="javascript:void(0);" class="navLi" id="li3"><div class="dropdown">
-                            <span>Color Theme</span>
-                            <div class="dropdown-content">
-                                <p class="pDropdown" onclick="paletteChange('white', 'white', 'rgb(48, 45, 53)', 'black', 'black', 'black', 'gray')">Default</p>
-                                <p class="pDropdown" onclick="paletteChange('rgb(39, 39, 39)', 'rgb(29, 29, 29)', 'white', 'white', 'white', 'white', 'grey')">Dark</p>
-                                <p class="pDropdown">Cream</p>
-                                <p class="pDropdown" onclick="paletteChange('rgb(204, 153, 102)', 'rgb(74, 44, 42)', 'rgb(27, 0, 0)', 'white', 'white', 'white', '#93531a')">Peanut</p>
-                                <p class="pDropdown">Hello World!</p>
-                                <p class="pDropdown">Hello World!</p>
-                                <p class="pDropdown">Hello World!</p>
-                                <p class="pDropdown">Hello World!</p>
-                            </div>
-                            </div>
-                            </a>
-                            </li>
-                    </ul>
+    <div class="desktop" id="desktop">
+        <div class="container" id="container">
+            <nav class="navDesktop" id="navDesktop">
+                <div class="menu">
+                    <div class="table">
+                        <ul>
+                            <li><a href="#" class="mainLi" title="Home" id="mainLi">Cool Typer 😎</a></li>
+                            <li><a href="javascript:void(0);" onclick="scrollMain()" class="navLi" id="li1" title="Type">Type</a></li>
+                            <li><a href="javascript:void(0);" onclick="scrollAbout()" class="navLi" id="li2" title="About">About</a></li>
+                            <li><a href="javascript:void(0);" class="navLi" id="li3"><div class="dropdown">
+                                <span>Color Theme</span>
+                                <div class="dropdown-content">
+                                    <p class="pDropdown" onclick="paletteChange('white', 'white', 'rgb(48, 45, 53)', 'black', 'black', 'black', 'gray')">Default</p>
+                                    <p class="pDropdown" onclick="paletteChange('rgb(39, 39, 39)', 'rgb(29, 29, 29)', 'white', 'white', 'white', 'white', 'grey')">Dark</p>
+                                    <p class="pDropdown">Cream</p>
+                                    <p class="pDropdown" onclick="paletteChange('rgb(204, 153, 102)', 'rgb(74, 44, 42)', 'rgb(27, 0, 0)', 'white', 'white', 'white', '#93531a')">Peanut</p>
+                                    <p class="pDropdown">Hello World!</p>
+                                    <p class="pDropdown">Hello World!</p>
+                                    <p class="pDropdown">Hello World!</p>
+                                    <p class="pDropdown">Hello World!</p>
+                                </div>
+                                </div>
+                                </a>
+                                </li>
+                        </ul>
+                    </div>
                 </div>
+
+            </nav>
+            <div class="main" id="main">
+                <div class="authorContainer"><p id="author">Kanye</p></div>
+                <div class="mainPlaceholder" id="mainPlaceholder"></div>
+                <input type="text" id="mainInput" class="mainInput" placeholder="Start typing here..." autofocus="autofocus" onfocus="this.select()">
+                <div class="refreshContainer"><a href="javascript:void(0);" id="refreshText" onclick="mainFunc();" title="Refresh text; You may also press 'Ctrl' to do the same.">Refresh Text</a><p id="vertLine">|</p>
+                <a href="javascript:void(0)" id="quoteType">  <select id="quoteTypeDropdown" title="Change quote type." onchange="userChangeQuote()">
+                    <option id="option1" value="normal">Normal</option>
+                    <option id="option2" value="funny">Funny</option>
+                    <option id="option3" value="all">Both</option>
+
+                  </select></a>
+
+            </div>
             </div>
 
-        </nav>
-        <div class="main" id="main">
-            <div class="authorContainer"><p id="author">Kanye</p></div>
-            <div class="mainPlaceholder" id="mainPlaceholder"></div>
-            <input type="text" id="mainInput" class="mainInput" placeholder="Start typing here..." autofocus="autofocus" onfocus="this.select()">
-            <div class="refreshContainer"><a href="javascript:void(0);" id="refreshText" onclick="mainFunc();" title="Refresh text; You may also press 'Ctrl' to do the same.">Refresh Text</a><p id="vertLine">|</p>
-            <a href="javascript:void(0)" id="quoteType">  <select id="quoteTypeDropdown" title="Change quote type." onchange="userChangeQuote()">
-                <option id="option1" value="normal">Normal</option>
-                <option id="option2" value="funny">Funny</option>
-                <option id="option3" value="all">Both</option>
 
-              </select></a>
 
         </div>
+        <div style="height: 1000px; background-color: rgb(255, 255, 255); display: none; text-align: center;" id="about" >
+                <div style= "padding-top: 80px;"><h1 id="abouth1" > </h1><div class="caret" id="aboutCaret"></div></div>
+                <div class="gridContainer">
+                    <div class="gridEl1" id="gridEl1"><h3 id="aboutH4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat provident qui obcaecati culpa rerum optio veritatis consequatur, modi quidem animi pariatur autem ipsa quod explicabo vero facere libero nisi placeat quia quo laborum illum. Ratione illum ad libero voluptas ea! Numquam, adipisci! Provident quia consectetur vero in earum nemo ex.</h3></div>
+                    <div class="gridEl2" id="gridEl2"></div>
+                    <div class="gridEl3" id="gridEl3"><iframe src="https://open.spotify.com/embed/album/5zi7WsKlIiUXv09tbGLKsE" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                </div>
         </div>
-        
-
-        
     </div>
-    <div style="height: 1000px; background-color: rgb(255, 255, 255); display: none; text-align: center;" id="about" >
-            <div style= "padding-top: 80px;"><h1 id="abouth1" > </h1><div class="caret" id="aboutCaret"></div></div>
-            <div class="gridContainer">
-                <div class="gridEl1" id="gridEl1"><h3 id="aboutH4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat provident qui obcaecati culpa rerum optio veritatis consequatur, modi quidem animi pariatur autem ipsa quod explicabo vero facere libero nisi placeat quia quo laborum illum. Ratione illum ad libero voluptas ea! Numquam, adipisci! Provident quia consectetur vero in earum nemo ex.</h3></div>
-                <div class="gridEl2" id="gridEl2"></div>
-                <div class="gridEl3" id="gridEl3"><iframe src="https://open.spotify.com/embed/album/5zi7WsKlIiUXv09tbGLKsE" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-            </div>
+    <div class="mobile">
+        <p class="mobileDisclaimer">This site is currently not supported on mobile.</p>
+        <button onclick="hideMobile()" style="font-family: 'Source Code Pro'; margin-top: 18px;">Proceed</button>
     </div>
-    <footer></footer>
 
     <script src="js/typing.js"></script>
-    <script src="js/quotes.js"></script>
+    <script src="js/mediaQuery.js"></script>
     <script src="js/minor.js"></script>
 </body> 
 </html>

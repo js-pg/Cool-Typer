@@ -8028,7 +8028,7 @@ function clearPlaceholder(){
 function mainFunc(){
   appendQuote()
   var typedWords = 0
-
+  document.getElementById('mainInput').value = '';
   var limit = document.getElementById("mainPlaceholder").children.length / 2;
     highlightText('word0')
     window.onkeydown=function(event){
@@ -8057,7 +8057,8 @@ function mainFunc(){
           if (typedWords == limit - 1){
             mainFunc()
             clearPlaceholder()
-          }
+            document.getElementById('mainInput').value = '';
+          };
           console.log(typedWords)
           document.getElementById('mainInput').value = '';
 

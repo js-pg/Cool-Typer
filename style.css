@@ -281,3 +281,19 @@ option {
     cursor: pointer;
     font-family: 'Source Code Pro'; 
 } 
+
+.mobile {
+    text-align: center;
+    font-family: 'Source Code Pro';
+}
+
+.mobileDisclaimer {
+    font-size: 1.5em;
+    padding-top: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobileDisclaimer:hover {
+    text-decoration: none;
+}
