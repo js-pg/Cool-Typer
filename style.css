@@ -285,6 +285,7 @@ option {
 .mobile {
     text-align: center;
     font-family: 'Source Code Pro';
+    display: none;
 }
 
 .mobileDisclaimer {
@@ -297,3 +298,14 @@ option {
 .mobileDisclaimer:hover {
     text-decoration: none;
 }
+
+@media screen and (max-aspect-ratio: 6/5){
+
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+ 
+ }

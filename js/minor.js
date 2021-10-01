@@ -106,3 +106,8 @@ paletteChange('white', 'white', 'rgb(48, 45, 53)', 'black', 'black', 'black', 'g
 var mainInput = document.getElementById('mainInput');
 mainInput.focus()
 mainInput.select()
+
+function hideMobile(){
+    document.getElementById('desktop').style.display = 'block';
+    document.getElementById('mobile').style.display = 'none';
+}
